@@ -1,6 +1,20 @@
-function App() {
+function App(props) {
+
+  // const notesList = [];
+
+  // for (let i = 0; i < props.notes.length; i++){
+  //   notesList.push(<li>{ props.notes[i].content }</li>);
+  // }
+
   return (
-    <h1>Hello, World!</h1>
+    <div>
+      <h1>Notes</h1>
+      <ul>
+          {
+          props.notes.map(note => <li key={note.id}>{ note.content }</li>)
+          }
+      </ul>
+    </div>
   )
 }
 
