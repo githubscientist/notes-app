@@ -6,6 +6,19 @@ class App extends Component {
     super(props);
   }
 
+  // component lifecycle
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate');
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount');
+  }
+
   render() {
     return (
       <div>
